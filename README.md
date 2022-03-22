@@ -62,13 +62,13 @@ You can access to the front-end application with this link :
 
 > http://localhost:8080/
 
-![Application main page](/src/assets/background1.jpg)
+![Application main page](https://raw.githubusercontent.com/YoannCHVR/virtualisation_project/master/src/assets/background1.JPG?raw=true)
 
 You can access to the phpmyadmin page with this link :
 
 > http://localhost:8081/
 
-![Phpmyadmin main page](/src/assets/background2.jpg)
+![Phpmyadmin main page](https://github.com/YoannCHVR/virtualisation_project/blob/master/src/assets/background2.JPG?raw=true)
 
 <em>To login phpmyadmin system, you have to use the IDs that you previously define in the .env file.</em>
 
@@ -76,4 +76,4 @@ You can access to the API with this link :
 
 > http://localhost:8082/
 
-![API get all users](/src/assets/background3.jpg)
+![API get all users](https://github.com/YoannCHVR/virtualisation_project/blob/master/src/assets/background3.JPG?raw=true)
