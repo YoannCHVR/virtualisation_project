@@ -62,7 +62,7 @@ You can access to the front-end application with this link :
 
 > http://localhost:8080/
 
-![Application main page](https://raw.githubusercontent.com/YoannCHVR/virtualisation_project/master/src/assets/background1.JPG?raw=true)
+![Application main page](https://github.com/YoannCHVR/virtualisation_project/blob/master/src/assets/background1.JPG?raw=true)
 
 You can access to the phpmyadmin page with this link :
 
