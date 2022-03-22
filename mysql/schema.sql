@@ -35,6 +35,15 @@ CREATE TABLE IF NOT EXISTS `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
+-- Déchargement des données de la table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `email`, `pwd`) VALUES
+(1, 'Alexis', 'alexis@domain.com', 'alexis-domain'),
+(2, 'Lucie', 'lucie@domain.com', 'lucie-domain'),
+(3, 'Joseph', 'joseph@domain.com', 'joseph-domain');
+
+--
 -- Index pour les tables déchargées
 --
 
