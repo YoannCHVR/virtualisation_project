@@ -1,10 +1,21 @@
 version: '1.0'
 services:
-  apache:
+  web:
+    build: .
+    stdin_open: true
+    tty: true
+    ports:
+      - "8080:8080"
+    volumes:
+      - "/app/node_modules"
+      - ".:/app"
+    container_name: web
+
+  back:
     build:
-      context: './apache/'
+      context: './php/'
       args:
-       APACHE_VERSION: ${APACHE_VERSION}
+       PHP_VERSION: ${PHP_VERSION}
     depends_on:
       - mysql
     links:
@@ -12,13 +23,16 @@ services:
     networks:
       - backend
     ports:
-      - "8080:80"
+      - "8082:80"
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/
-    container_name: apache
+    container_name: back
 
   mysql:
-    image: mysql:${MYSQL_VERSION}
+    build:
+      context: './mysql/'
+      args:
+       PHP_VERSION: ${MYSQL_VERSION}
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     ports:
