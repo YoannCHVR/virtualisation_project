@@ -1,6 +1,14 @@
 # virtualisation_project
 
-## Prerequisite to run the project
+## Project description
+
+This project aims to deploy a full docker environment with front and back-end with a database. 
+
+As website user, you can : add, edit and remove any user from the list.
+
+You are able to launch all the environment if you done all prerequisites and access the interface on : http://localhost:8080/. You can also find this project in production on Google Cloud on this link.
+
+## Prerequisites to run the project
 
 ### Install Docker Desktop for Windows 10
 
