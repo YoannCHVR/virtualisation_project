@@ -7,4 +7,4 @@ docker volume rm $(docker volume ls -qf dangling=true);
 docker-compose up -d;
 
 # CREATE DATABASE
-cat db.sql | docker exec -i mysql /usr/bin/mysql -u root --password=root db;
+cat mysql/schema.sql | docker exec -i mysql /usr/bin/mysql -u root --password=root ${DB_NAME};
