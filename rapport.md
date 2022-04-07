@@ -2,7 +2,25 @@
 
 **Table of Contents**
 
-## Architecture de l'application
+1. [Introduction](#introduction)
+2. [Architecture de l'application](#architecture)
+3. [Description du fonctionnement](#desc)
+    1. [Docker Files](#docker)
+    2. [Front-End (VueJS) Files](#front-end)
+    3. [Back-End (PHP) Files](#back-end)
+    4. [API Files](#api)
+    5. [Node Files](#node)
+    6. [Other Files](#other)
+
+## Introduction <a name="introduction"></a>
+
+Ce projet vise à déployer un environnement docker complet avec front et back-end ainsi qu'une base de données.
+
+En tant qu'utilisateur du site web, vous pouvez : ajouter, modifier et supprimer n'importe lequel des utilisateurs de la liste.
+
+Lorsque que vous avez fait les pré-requis expliqués dans le fichier README, vous pouvez lancer tout l'environnement et accéder à l'interface sur : http://localhost:8080/.
+
+## Architecture de l'application <a name="architecture"></a>
 
 ```
 ├───mysql
@@ -15,9 +33,10 @@
     ├───assets
     └───components
 ```
-## Description du fonctionnement
 
-### Docker Files
+## Description du fonctionnement <a name="desc"></a>
+
+### Docker Files <a name="docker"></a>
 
 #### ./docker-compose.yml
 
@@ -50,7 +69,7 @@ Le Dockerfile qui se trouve dans le dossier PHP est utilisé pour configurer le 
 
 Le Dockerfile qui se trouve dans le dossier MySQL est utilisé pour configurer le service "mysql". Il utilise une image MySQL standard.
 
-### Front-End (VueJS) Files
+### Front-End (VueJS) Files <a name="front-end"></a>
 
 #### ./src/App.vue
 
@@ -72,13 +91,13 @@ Dossier contenant les images affichées sur les templates de l'application (+ le
 
 Fichier accessible par l'utilisateur lors de l'accès à l'application. Il contient le rendu graphique de celle-ci.
 
-### Back-End (PHP) Files
+### Back-End (PHP) Files <a name="back-end"></a>
 
 #### ./public/action/
 
 Dossier contenant les fichiers PHP utilisés pour faire les requêtes vers la base de données. (doit être déplacé pour éviter tout accès par les utilisateurs)
 
-### API Files
+### API Files <a name="api"></a>
 
 #### ./public/api/
 
@@ -88,13 +107,13 @@ Dossier contenant le(s) fichier(s) permettant d'accéder aux données de la base
 
 Script SQL contenant la procédure de création des tables définies dans la base de données, ainsi que les données qui y sont créées par défaut.
 
-### Node Files
+### Node Files <a name="node"></a>
 
 #### ./package.json
 
 Fichier ressemblant à une sorte de manifeste. Il peut faire beaucoup de choses, notamment centraliser la configuration pour les outils mais aussi y stocker les noms et les versions de tous les paquets à installer.
 
-### Other Files
+### Other Files <a name="other"></a>
 
 #### ./.env.example
 
