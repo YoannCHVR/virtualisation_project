@@ -26,20 +26,6 @@ You can find the Node installer at this [link](https://nodejs.org/en/download)
 
 > node -v : v16.14.2 | npm -v : 8.5.5
 
-### Rename .env.example file to .env and complete it
-
-At the root project "./virtualisation_project/", rename the .env.example to .env file to be able to use it in the project.
-
-After this, you have to complete the file with your own database information :
-
-```
-DB_ROOT_PASSWORD=root_pwd_example
-DB_HOST=host_example
-DB_NAME=name_example
-DB_USERNAME=username_example
-DB_PASSWORD=pwd_example
-```
-
 ## How to run project as user
 
 When you have done every prerequisites, please run the following command to clone the project on your desktop with git :
@@ -52,6 +38,19 @@ Please, run the following command to install the project :
 
 ```
 npm install
+```
+
+At the root project "./virtualisation_project/", rename the .env.example to .env file to be able to use it in the project.
+
+You have to complete the following lines with your own database information :
+
+```
+DB_ROOT_PASSWORD=root_pwd_example
+DB_HOST=host_example
+DB_NAME=name_example
+DB_USERNAME=username_example
+DB_PASSWORD=pwd_example
+PROJECT_ROOT=path_example
 ```
 
 After this, you have to deploy the project. For this step, you have different ways to done it :

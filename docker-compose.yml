@@ -15,7 +15,7 @@ services:
     build:
       context: './php/'
       args:
-       PHP_VERSION: ${PHP_VERSION}
+       PHP_VERSION: 7.3-apache
     depends_on:
       - mysql
     links:

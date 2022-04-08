@@ -22,7 +22,7 @@ $name = $data->name;
 $email = $data->email;
 $pwd = $data->pwd;
 
-$sql = "INSERT INTO users (name, email, pwd) VALUES (:name, :email,:pwd)";
+$sql = "INSERT INTO users (name, email, pwd) VALUES (:name, :email, :pwd)";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
