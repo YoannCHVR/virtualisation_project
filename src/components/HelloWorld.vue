@@ -12,7 +12,7 @@
     <tr>
       <td></td>
       <td><input type="text" v-model="name"></td>
-      <td><input type="text" v-model="email"></td>
+      <td><input type="email" v-model="email"></td>
       <td><input type="text" v-model="pwd"></td>
       <td>
         <input type="button" value="Add" v-if="!editMode" @click="addUser()">

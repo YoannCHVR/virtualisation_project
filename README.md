@@ -14,6 +14,8 @@ You are able to launch all the environment if you done all prerequisites and acc
 
 You can find the Docker Desktop at this [link](https://docs.docker.com/desktop/windows/install/)
 
+> docker -v : Docker version 20.10.14, build a224086
+
 ### Install Git for Windows 10
 
 You can find the Git Software just right [here](https://git-scm.com/downloads)
@@ -21,6 +23,8 @@ You can find the Git Software just right [here](https://git-scm.com/downloads)
 ### Install NodeJS for Windows 10
 
 You can find the Node installer at this [link](https://nodejs.org/en/download)
+
+> node -v : v16.14.2 | npm -v : 8.5.5
 
 ### Rename .env.example file to .env and complete it
 
